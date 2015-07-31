@@ -86,6 +86,7 @@ video {
 	position: absolute;
 	top: 150px;
 	text-align: center;
+	min-width: 100%;
 }
 
 
@@ -93,7 +94,8 @@ h1 {
 	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 8px;
 	background-color: #FFF;
-	padding: 20px;
+	padding: 20px 40px;
+	display: inline-block;
 	font-size: 5em;
 	margin: 0 auto;
 	mix-blend-mode: screen;
@@ -103,10 +105,11 @@ h2 {
 color: #FFF;
 font-family: 'Josefin Sans', sans-serif;
  font-weight: 400;
+ letter-spacing: 10px;
 }
 
 hr {
-	width: 10%;
+	width: 5%;
     margin: auto;
     border-top: 3px solid #FFF;
 }

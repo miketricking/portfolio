@@ -53,7 +53,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-html {
+* {
+  box-sizing: border-box;
+}
+   
+   html {
 	background-size: cover;
 	width: 100%;
 	height: 1000px;
@@ -103,30 +107,85 @@ font-weight: 300;
 #nav {
 position: relative;
 width: 50%;
-height: 75px;
+height: 45px;
 border: 1px solid #FFF;
 margin: auto;
+background-color: rgba(0,0,0,0.2);
 }
 
-ul {
+
+#nav ul {
 padding: 0px;
 margin: 0px;
+color: #fff;
+height: 100%;
+text-transform: uppercase;
+font-weight: 300;
+letter-spacing: 1px;
+font-size: 18px;
 }
 
-li {
+#nav li {
 display: inline-block;
-padding: 20px;
+width: 49%;
+text-align: center;
+padding-top: 10px;
+height: 100%;
 }
 
-.left {
+li:nth-child(2) {
+border-left: 1px solid #fff;
+}
+
+.section {
+position: relative;
+margin: auto;
+width: 80%;
+text-align: center;
+margin-top: 200px;
+padding-bottom: 200px;
+}
+
+.roundicon{
+ opacity: 0.94;
+    background-color: #fff;
+    height: 125px;
+    width: 125px;
+    margin: auto;
+    font-size: 25px;
+    mix-blend-mode: screen;
+    border-radius: 50%;
+	}
+	
+.squareicon {
+    margin: auto;
+    color: white;
+    font-size: 25px;
+    opacity: 0.94;
+}
+	
+.headings {
+    display: inline-block;
+    background-color: rgba(255,255,255,0.94);
+    font-size: 50px;
+    padding: 14px 40px;
+    text-transform: uppercase;
+    mix-blend-mode: screen;
+    font-weight: 300;
+	margin: 20px;
+}
+
+.tile
+{
+position: relative;
+width:50%;
+overflow: hidden;
 float: left;
 }
 
-.right {
-float: right;
-}
 
-/* hover effect */
+
+/* hover effect 1 */
 
 .hovereffect {
   width: 100%;
@@ -146,8 +205,6 @@ float: right;
   top: 0;
   left: 0;
 }
-
-
 
 .hovereffect:hover h2, .hovereffect:hover h1, .hovereffect:hover .standhr {
   opacity: 0;
@@ -310,6 +367,79 @@ opacity: 0.8;
   transform: translate3d(0,0,0) rotate(45deg) scale(1);
   opacity: 1;
   filter: alpha(opacity=100);
+}
+
+/* hover effect 2 */
+
+.hovereffect2 .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
+  transition: opacity 0.8s, transform 0.8s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect2:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect2 img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.hovereffect2:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect2 .ihh2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 12px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
+  transition: opacity 0.8s, transform 0.8s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect2 a, .hovereffect2 p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
+  transition: opacity 0.8s, transform 0.8s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect2:hover a, .hovereffect2:hover p, .hovereffect2:hover ihh2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 @media screen and (max-width: 500px) { 

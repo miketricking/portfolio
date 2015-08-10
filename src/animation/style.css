@@ -1,0 +1,95 @@
+/* .element {
+animation-name: sirs;
+animation-duration: 4s;
+animation-delay: 2s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-direction: alternate;
+}
+*/
+
+div {
+position: absolute;
+left: 45%;
+top: 45%;
+width: 200px;
+height: 200px;
+background-color: coral;
+animation: square-to-cir 2s infinite cubic-bezier(0.68, -0.55, 0.27, 1.95) alternate;
+-webkit-animation: square-to-cir 2s 1 infinite alternate;
+outline: 1px solid transparent;
+}
+
+@-webkit-keyframes square-to-cir {
+0%{border-radius: 0 0 0 0;background-color:coral;}
+25%{border-radius: 50% 0 0 0;background-color:darksalmon;}
+50%{border-radius: 50% 50% 0 0;background-color:indianred;}
+75%{border-radius: 50% 50% 50% 0;background-color:lightcoral;}
+100%{border-radius: 50%;background-color:darksalmon;}
+}
+
+@keyframes square-to-cir {
+0%{border-radius: 0 0 0 0;background-color:coral;transform:rotate(0deg);}
+25%{border-radius: 50% 0 0 0;background-color:darksalmon;transform:rotate(45deg);}
+50%{border-radius: 50% 50% 0 0;background-color:indianred;transform:rotate(90deg);}
+75%{border-radius: 50% 50% 50% 0;background-color:lightcoral;transform:rotate(135deg);}
+100%{border-radius: 50%;background-color:darksalmon;transform:rotate(180deg)}
+}
+
+
+
+
+
+@keyframes sirs{
+from {
+	opacity: 1;
+	}
+to {
+	opacity: 0;
+	}
+}
+
+@keyframes sirsro {
+to {transform: rotate(180deg);
+	}
+}
+
+
+@-webkit-keyframes sirs { 
+from {
+	opacity: 1;
+	}
+to {
+	opacity: 0;
+	}
+	}
+	
+	
+@-moz-keyframes sirs { 
+from {
+	opacity: 1;
+	}
+to {
+	opacity: 0;
+	} 
+	}
+	
+@-ms-keyframes sirs {
+from {
+	opacity: 1;
+	}
+to {
+	opacity: 0;
+	}
+		}
+		
+		
+@-o-keyframes sirs {
+ from {
+	opacity: 1;
+	}
+
+to {
+	opacity: 0;
+	}
+	}

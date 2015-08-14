@@ -96,7 +96,10 @@ video {
 	mix-blend-mode: screen;
 	height: 305px;
 	margin-top: 150px;
+	transition: all 0.5s linear;
 }
+
+
 
 h1 {
 	letter-spacing: 8px;
@@ -107,7 +110,36 @@ h1 {
 	padding-top: 10px;
 }
 
+#social {
+	margin-left: -99px;
+	position: fixed;
+    top: -12px;
+    left: 50%;
+    font-size: 2em;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 15px;
+    padding-top: 15px;
+	z-index: 2
+}
 
+#social p {
+margin: 2px 20px;
+}
+
+#social p a {
+	color: #fff;
+    opacity: 0.94
+}
+
+#social p a i {
+	padding: 4px;
+transition: all 0.3s linear;
+}
+
+#social p a i:hover{
+transform: scale(1.1);
+ -webkit-transform: scale(1.1);
+}
 
 span {
 font-weight: 300;
@@ -120,6 +152,7 @@ height: 45px;
 border: 1px solid #FFF;
 margin: auto;
 background-color: rgba(0,0,0,0.2);
+transition: all 0.5s linear;
 }
 
 
@@ -477,10 +510,12 @@ opacity: 0.8;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
-
-@media screen and (max-width: 500px) { 
+/* for video background but causing problems with making the site responsive   @media screen and (max-width: 500px) { 
   div{width:70%;} 
 }
+
+*/
+
 @media screen and (max-device-width: 800px) {
   html { background: url(https://demosthenes.info/assets/images/polina.jpg) #000 no-repeat center center fixed; }
   #bgvid { display: none; }
@@ -613,3 +648,216 @@ opacity: 0.8;
         page-break-after: avoid;
     }
 }
+
+/* For mobile devices and responsive */
+@media only screen and (max-width: 1160px) {
+  .hovereffect2 .ihh2 {
+  font-size: 10px;
+  }
+  
+  .hovereffect2 a {
+  font-size: 13px;
+  }
+
+}
+
+@media only screen and (max-width: 982px) {
+
+.hovereffect .standhr {
+    border-top: 2px solid #000;
+}
+
+  .hovereffect h1 {
+	font-size: 2em;
+  }
+  
+  .hovereffect h2 {
+  font-size: 18px;
+  }
+  
+  .hovereffect2 a {
+  font-size: 12px;
+  }
+  
+  .hovereffect2 .ihh2 {
+  padding:0px;
+  }
+  
+  .roundicon {
+  height: 100px;
+  width: 100px;
+  font-size: 20px;
+  }
+  
+  .squareicon {
+  font-size: 20px;
+  }
+  
+  .headings{
+  font-size:40px;
+  padding: 10px 30px;
+  }
+  
+  .section{
+  margin-top:100px;
+  height: 700px;
+  }
+ 
+ #header, #nav {
+width:80%;
+}
+
+	}
+	
+@media only screen and (max-width: 970px) {
+
+.hovereffect2 .ihh2 {
+display: none;
+}
+
+.hovereffect2 .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  border-top: none;
+  border-bottom: none;
+}
+
+.hovereffect2 img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.4);
+  -webkit-filter: brightness(0.4);
+}
+
+.hovereffect2 a, .hovereffect2 p, .hovereffect2 ihh2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+
+}
+
+@media only screen and (max-width: 840px) {
+
+.hovereffect a i {
+font-size: 35px;
+padding: 42px;
+}
+
+
+#nav  {
+height: 30px;
+}
+
+#nav ul {
+font-size: 14px;
+}
+
+#nav li {
+    padding-top: 5px;
+}
+
+#nav li a {
+padding: 2px;
+}
+
+.roundicon {
+  height: 75px;
+  width: 75px;
+  font-size: 15px;
+  }
+  
+  .squareicon {
+  font-size: 15px;
+  }
+  
+  .headings{
+  font-size:32px;
+  padding: 8px 20px;
+  }
+
+
+}
+
+
+
+@media only screen and (max-width: 840px) {
+  .section{
+  margin-top:100px;
+  height: 580px;
+  }
+
+  
+  .roundicon {
+  height: 66px;
+  width: 66px;
+  font-size: 13px;
+  }
+  
+  .squareicon {
+  font-size: 13px;
+  }
+  
+}
+
+@media only screen and (max-width: 650px) {
+
+	#header, #nav {
+width: 100%;
+}
+
+
+	.tile {
+	width:100%;
+	}
+	
+	.section {
+	height: 1000px;
+	}
+	
+	.hovereffect:hover h2, .hovereffect:hover h1, .hovereffect:hover .standhr {
+  opacity: 1;
+  filter: alpha(opacity=1);
+    -webkit-transform: translate3d(-50%,-50%,0) scale3d(1,1,1);
+  transform: translate3d(-50%,-50%,0) scale3d(1,1,1);
+}
+
+.hovereffect:hover .group1 i:empty, .hovereffect:hover .group2 i:empty {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.hovereffect:hover .movehr:nth-child(2) {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translate3d(-50%,-50%,0) rotate(0deg) scale3d(1,1,1);
+  transform: translate3d(-50%,-50%,0) rotate(0deg) scale3d(1,1,1);
+}
+
+.hovereffect:hover .movehr:nth-child(3) {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translate3d(-50%,-50%,0) rotate(90deg) scale3d(1,1,1);
+  transform: translate3d(-50%,-50%,0) rotate(90deg) scale3d(1,1,1);
+}
+
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  .section{
+  height: 800px;
+  }
+ 
+ .hovereffect h2 {
+ top: 72%;
+ }
+
+
+}
+

@@ -9,29 +9,172 @@
         <title></title>
         <meta name="description" content="mike young web dev portfolio">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="ico.ico">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
+		
+		
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="custom.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop>
-		<source src="videos/WEBM/Working-Space.webm" type="video/webm">
-		<source src="videos/MP4/Working-Space.mp4" type="video/mp4">
+        <video autoplay  poster="videos/snapshots/firstframe.jpg" id="bgvid" loop>
+		<source src="videos/OGV/inkfull.ogv" type="video/webm">
+		<source src="videos/MP4/inkfull.mp4" type="video/mp4">
 		</video>
 		
-		<div id="header">
-			<h1> MIKE YOUNG </h1>
+		<div id="social">
+			<p>
 		
-			<h2>Web development<br>&<br>design</h2>
-			<hr>
+				<a href="https://www.behance.net/mike_young"><i class="fa fa-behance-square"></i></a>
+				<a href="https://dribbble.com/mike_youngg"><i class="fa fa-dribbble"></i></a>
+				<a href="https://twitter.com/mike_youngg"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.facebook.com/michaely1990"><i class="fa fa-facebook"></i></a>
+				
+			</p>
 		</div>
+		
+		<div id="container">
+		
+		<div id="header">
+		 <div class="hovereffect">
+			<div class="overlay">
+			<hr class="standhr">
+			<h1>MIKE <span>YOUNG</span></h1>
+            <h2>Web development & design</h2>
+				<div class="rotate">
+					<p class="group1"><a href="https://twitter.com/mike_youngg"><i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/michaely1990"><i class="fa fa-facebook"></i></a></p>
+						<hr class="movehr">
+						<hr class="movehr">
+					<p class="group2"><a href="https://www.behance.net/mike_young"><i class="fa fa-behance-square"></i></a><a href="https://dribbble.com/mike_youngg"><i class="fa fa-dribbble"></i></a></p>
+				</div>
+			</div>
+		</div>
+		</div>
+		
+		
+		<div id="nav">
+			<ul>
+				<li><a href="#websites"><i class="fa fa-globe"></i> Websites</li></a>
+				<li><a href="#projects">Web Projects <i class="fa fa-file-code-o"></i></li></a>
+			</ul>
+		</div>
+		
+		<div class="section" id="websites">
+				<div class="roundicon">
+					<i class="fa fa-globe fa-5x"></i>
+				</div>
+			<h2 class="headings">Websites</h2>
+			<div class="row">
+			
+			
+				<div class="tile">
+					<div class="hovereffect2">
+						<img class="img-responsive" src="img/websites1.jpg" alt="">
+					<div class="overlay">
+						<p class="ihh2">Shaolin SUSU is a website I created to help promote and provide information about the Southampton Shaolin Kung Fu Club based at the University of Southampton. This site uses bootstrap.</p>
+						<p> 
+							<a href="http://www.shaolin.susu.org/" target="_blank">SHAOLIN.SUSU.ORG</a>
+						</p> 
+					</div>
+					</div>
+				</div>
+				
+				<div class="tile">
+					<div class="hovereffect2">
+						<img class="img-responsive" src="img/websites2.jpg" alt="">
+					<div class="overlay">
+						<p class="ihh2">SneakOff is an e-commerce website that sells unique and rare sneakers. This site is using Wordpress and Woocommerce.</p>
+						<p> 
+							<a href="http://www.sneakoff.co.uk/" target="_blank">SNEAKOFF.COM</a>
+						</p> 
+					</div>
+					</div>
+				</div>
+			
+				<div class="tile">
+					<div class="hovereffect2">
+						<img class="img-responsive" src="img/websites3.jpg" alt="">
+						<div class="overlay">
+						<p class="ihh2">This is a single page mock up website using a parallax effect, the images move based on mouse position or tilt position on mobiles.</p>
+						<p> 
+							<a href="http://www.mikeyoungstunts.com" target="_blank">MIKEYOUNGSTUNTS.COM</a>
+						</p> 
+					</div>
+					</div>
+				</div>
+			
+			
+			
+			</div>
+		</div>
+		
+		
+		<div class="section" id ="projects">
+				<div class="squareicon">
+					<i class="fa fa-file-code-o fa-5x"></i>
+				</div>
+			<h2 class="headings">Projects</h2>
+			<div class="row">
+			
+			
+				<div class="tile">
+					<div class="hovereffect2">
+						<img class="img-responsive" src="img/project1.jpg" alt="">
+					<div class="overlay">
+						<p class="ihh2">I wanted to contribute to the webdev community and create something that others could use. I decided to develop a single page with 14 different hover effects aimed towards image galleries. Rather than create it just as a repo where you'd import the code for all 14 effects I used modals to display the code for the desired effect that can be copied and pasted for a more optimized solution.</p>
+						<p> 
+							<a href="http://miketricking.github.io/dist/" target="_blank">MIKETRICKING.GITHUB.IO/DIST/</a>
+						</p> 
+					</div>
+					</div>
+				</div>
+				
+				<div class="tile">
+					<div class="hovereffect2">
+						<img class="img-responsive" src="img/project2.jpg" alt="">
+					<div class="overlay">
+						<p class="ihh2">I created a reflective M for my first name. Click on the slides to see the reflection in full effect.</p>
+						<p> 
+							<a href="Mwithsliderbg/index.html" target="_blank">REFLECTIVE SLIDER EFFECT</a>
+						</p> 
+					</div>
+					</div>
+				</div>
+				
+				<div class="tile">
+					<div class="hovereffect2">
+						<img class="img-responsive" src="img/project3.jpg" alt="">
+					<div class="overlay">
+						<p class="ihh2">Here I created a looping animation of a square transforming into a circle in 4 stages and changing colour.</p>
+						<p> 
+							<a href="animation/index.html" target="_blank">CSS ANIMATION</a>
+						</p> 
+					</div>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+		
+		
+		
+
+			
+			
+		
+	
+	</div>
+		
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

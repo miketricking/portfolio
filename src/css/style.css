@@ -242,6 +242,19 @@ float: left;
 }
 
 
+/* delay animation intro */
+
+#social {
+-webkit-animation-delay: 1s;
+        animation-delay: 1s;
+  }
+  
+ /* reset animation fill mode so text stays see through */
+ 
+ .fillmode {
+	 -webkit-animation-fill-mode: none;
+    animation-fill-mode: none; 
+ }
 
 /* hover effect 1 */
 

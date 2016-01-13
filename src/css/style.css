@@ -109,6 +109,10 @@ h1 {
 	padding-top: 10px;
 }
 
+  .hovereffect2 h2 {
+  font-size: 15px;
+  }
+
 #social {
 	margin-left: -99px;
 	position: fixed;
@@ -241,7 +245,7 @@ overflow: hidden;
 float: left;
 }
 
-.tile:last-child {
+a:last-child .tile {
 	margin-bottom: 125px;
 }
 
@@ -253,15 +257,11 @@ float: left;
         animation-delay: 0.8s;
   }
   
-
   
- /* reset animation fill mode so text stays see through */
-  .fillmode {
-	 -webkit-animation-fill-mode: none;
-    animation-fill-mode: none; 
-		mix-blend-mode: screen;
+ /* screen the animation so they are see-through */
+ .screen {
+	 mix-blend-mode: screen;
  }
-
 
 /* hover effect 1 */
 
@@ -511,7 +511,7 @@ font-family: 'PT Serif', serif;
   transform: translate3d(0,-100%,0);
 }
 
-.hovereffect2 a, .hovereffect2 p {
+.hovereffect2 h2, .hovereffect2 p {
   color: #FFF;
   padding: 1em 0;
   opacity: 0;
@@ -522,7 +522,7 @@ font-family: 'PT Serif', serif;
   transform: translate3d(0,100%,0);
 }
 
-.hovereffect2:hover a, .hovereffect2:hover p, .hovereffect2:hover ihh2 {
+.hovereffect2:hover h2, .hovereffect2:hover p, .hovereffect2:hover ihh2 {
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transform: translate3d(0,0,0);
@@ -673,7 +673,7 @@ font-family: 'PT Serif', serif;
   font-size: 10px;
   }
   
-  .hovereffect2 a {
+  .hovereffect2 h2 {
   font-size: 13px;
   }
 
@@ -693,7 +693,7 @@ font-family: 'PT Serif', serif;
   font-size: 18px;
   }
   
-  .hovereffect2 a {
+  .hovereffect2 h2 {
   font-size: 12px;
   }
   
@@ -749,7 +749,7 @@ display: none;
   -webkit-filter: brightness(0.4);
 }
 
-.hovereffect2 a, .hovereffect2 p, .hovereffect2 ihh2 {
+.hovereffect2 h2, .hovereffect2 p, .hovereffect2 ihh2 {
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transform: translate3d(0,0,0);

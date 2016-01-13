@@ -93,12 +93,11 @@ video {
 	width: 60%;
 	margin: auto;
 	background-color: rgba(255,255,255,0.94);
-	mix-blend-mode: screen;
 	height: 305px;
 	margin-top: 150px;
+		mix-blend-mode: screen;
 	transition: all 0.5s linear;
 }
-
 
 
 h1 {
@@ -153,6 +152,7 @@ border: 1px solid #FFF;
 margin: auto;
 background-color: rgba(0,0,0,0.2);
 transition: all 0.5s linear;
+z-index: 1;
 }
 
 
@@ -245,16 +245,19 @@ float: left;
 /* delay animation intro */
 
 #social {
--webkit-animation-delay: 1s;
-        animation-delay: 1s;
+-webkit-animation-delay: 0.8s;
+        animation-delay: 0.8s;
   }
   
+
+  
  /* reset animation fill mode so text stays see through */
- 
- .fillmode {
+  .fillmode {
 	 -webkit-animation-fill-mode: none;
     animation-fill-mode: none; 
+		mix-blend-mode: screen;
  }
+
 
 /* hover effect 1 */
 
